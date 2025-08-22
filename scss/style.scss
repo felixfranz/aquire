@@ -1,0 +1,60 @@
+
+/*--------------------------------------------------------------
+# Generic
+--------------------------------------------------------------*/
+
+/* Normalize
+--------------------------------------------- */
+@import "base_settings/normalize";
+
+// Import variables and mixins.
+@import "base_settings/variables";
+
+// Import typography
+@import "base_settings/typography";
+
+/*********************
+BASE (MOBILE) SIZE
+*********************/
+
+// styles in base.scss
+@import "breakpoints/base";
+
+/*********************
+LARGER MOBILE DEVICES
+*********************/
+@media only screen and (min-width: 481px) {
+    @import "breakpoints/481up";
+}
+
+// end of media query
+
+/*********************
+TABLET & SMALLER LAPTOPS
+*********************/
+@media only screen and (min-width: 768px) {
+    @import "breakpoints/768up";
+}
+
+// end of media query
+
+/*********************
+DESKTOP
+*********************/
+@media only screen and (min-width: 1030px) {
+    @import "breakpoints/1030up";
+}
+
+// end of media query
+
+/*********************
+LARGE VIEWING SIZE
+*********************/
+@media only screen and (min-width: 1240px) {
+
+    // styles in 1240up.scss
+    @import "breakpoints/1240up";
+
+}
+
+// end of media query

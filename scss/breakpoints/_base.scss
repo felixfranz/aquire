@@ -1,0 +1,44 @@
+/*********************
+GENERAL STYLES
+*********************/
+html {
+    overflow-x: hidden;
+    box-sizing: border-box;
+    /* magic... */
+
+    --flow-small: 10px;
+    --flow-medium: 20px;
+    --flow-big: 30px;
+    --bottom-row-height: 70px;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    //line-height: 1;
+    position: relative;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+.hidden {
+    color: transparent;
+    visibility: hidden;
+    height: 0;
+}
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+.wrap {
+    width: 96%;
+    margin: 0 auto;
+}
