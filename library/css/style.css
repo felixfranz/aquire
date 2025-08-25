@@ -218,6 +218,27 @@ textarea {
     page-break-after: avoid;
   }
 }
+@font-face {
+  font-family: "Zodiak";
+  src: url("../fonts/Zodiak-Variable.eot");
+  src: url("../fonts/Zodiak-Variable.eot?#iefix") format("embedded-opentype"), url("../fonts/Zodiak-Variable.woff2") format("woff2"), url("../fonts/Zodiak-Variable.ttf") format("truetype"), url("../fonts/Zodiak-Variable.svg#font-name") format("svg");
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GeneralSans";
+  src: url("../fonts/GeneralSans-Variable.eot");
+  src: url("../fonts/GeneralSans-Variable.eot?#iefix") format("embedded-opentype"), url("../fonts/GeneralSans-Variable.woff2") format("woff2"), url("../fonts/GeneralSans-Variable.ttf") format("truetype"), url("../fonts/GeneralSans-Variable.svg#font-name") format("svg");
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+}
+html {
+  --font-serif: "Zodiak", "Garamond", "Times New Roman", serif;
+  --font-sans: "GeneralSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 /*********************
 BASE (MOBILE) SIZE
 *********************/
@@ -252,6 +273,35 @@ body {
   color: transparent;
   visibility: hidden;
   height: 0;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5 {
+  text-rendering: optimizelegibility;
+  font-weight: normal;
+  font-family: var(--font-serif);
+  margin: 0 0 0.3em;
+  /* removing text decoration from all headline links */
+}
+h1 a,
+.h1 a,
+h2 a,
+.h2 a,
+h3 a,
+.h3 a,
+h4 a,
+.h4 a,
+h5 a,
+.h5 a {
+  text-decoration: none;
 }
 
 /*********************
